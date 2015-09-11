@@ -1,0 +1,40 @@
+[push]
+	default = simple
+[alias]
+	st = status
+	ci = commit
+	cp = cherry-pick
+	b = branch
+	mb = checkout -b
+	co = checkout
+	p = push
+	go = push -f
+	l = pull
+	all = submodule update --init --recursive
+	save = stash save
+	restore = stash save
+	squish = rebase -i HEAD~2
+	squash = rebase -i HEAD~2
+	squaash = rebase -i HEAD~3
+	squaaash = rebase -i HEAD~4
+	squaaaash = rebase -i HEAD~5
+
+[core]
+	editor = /usr/local/bin/mate -w
+[color]
+	ui = auto
+[color "branch"]
+	current = magenta bold
+	local = magenta
+	remote = cyan
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+[color "status"]
+	added = green
+	changed = yellow
+	untracked = cyan
+[mergetool]
+	keepBackup = true
